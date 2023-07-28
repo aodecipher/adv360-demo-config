@@ -60,21 +60,8 @@ macro_tmux_win_switch: macro_tmux_win_switch {
     label = "macro_tmux_win_switch";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&macro_press &kp LWIN>, <&macro_tap &kp SEMICOLON>, <&macro_release &kp LWIN>,{escape} &kp K &kp ENTER
-
-// goodnote L
-macro_GNL: macro_GNL {
-    label = "macro_GNL";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings =  &kp LEFT &kp LEFT &kp LEFT
-
-// goodnote R
-macro_GNR: macro_GNR {
-    label = "macro_GNR";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings =  &kp RIGHT &kp RIGHT &kp RIGHT
+    bindings = <&macro_press &kp LWIN>, <&macro_tap &kp SEMICOLON>, <&macro_release &kp LWIN>, <&kp ESC>, <&kp K>, <&kp ENTER>;
+};
 
 // kp-x
 macro_Del_after: macro_Del_after {
@@ -89,7 +76,24 @@ macro_Delword_after: macro_Delword_after {
     label = "macro_Delword_after";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
-    bindings = <&macro_press &kp LWIN LSHIFT>, <&macro_tap &kp DELETE>, <&macro_release &kp LWIN LSHIFT>
+    bindings = <&macro_press &kp LWIN LSHIFT>, <&macro_tap &kp DELETE>, <&macro_release &kp LWIN LSHIFT>;
+};
+
+// goodnote L
+macro_GNL: macro_GNL {
+    label = "macro_GNL";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =  <&kp RIGHT>, <&kp RIGHT>, <&kp RIGHT>;
+};
+
+// goodnote R
+macro_GNR: macro_GNR {
+    label = "macro_GNR";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings =  <&kp RIGHT>, <&kp RIGHT>, <&kp RIGHT>;
+};
 
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
