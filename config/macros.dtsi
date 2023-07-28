@@ -1,9 +1,9 @@
 // F5
 macro_tmux: macro_tmux {
-    label = "macro_tmux";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp BSLH>, <&macro_release &kp LCTRL>;
+label = "macro_tmux";
+compatible = "zmk,behavior-macro";
+#binding-cells = <0>;
+bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp BSLH>, <&macro_release &kp LCTRL>;
 };
 
 macro_quotes: macro_quotes{
