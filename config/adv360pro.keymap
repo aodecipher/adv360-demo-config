@@ -23,6 +23,9 @@
     chosen {
         zmk,matrix_transform = &urobs_transform;
     };
+    behaviors {
+        #include "macros.dtsi"
+    };
 
     keymap {
         compatible = "zmk,keymap";
