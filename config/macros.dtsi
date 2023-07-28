@@ -1,3 +1,10 @@
+// kp-c
+macro_left_wsp: macro_left_wsp {
+    label = "macro_left_wsp";
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    bindings = <&macro_press &kp RSHIFT &kp RWIN>, <&macro_tap &kp LEFT>, <&macro_release &kp RSHIFT &kp RWIN>;
+};
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
 label = "macro_quotes";
