@@ -1,41 +1,9 @@
-// kp-c
-macro_left_wsp: macro_left_wsp {
-    label = "macro_left_wsp";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp RSHIFT &kp RWIN>, <&macro_tap &kp LEFT>, <&macro_release &kp RSHIFT &kp RWIN>;
-};
-
-// kp-v
-macro_right_wsp: macro_right_wsp {
-    label = "macro_right_wsp";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp LSHIFT>, <&macro_tap <&macro_press &kp LWIN>, <&macro_tap &kp RIGHT>, <&macro_release &kp LSHIFT>,>, <&macro_release &kp LWIN>;
-};
-
-// kp-d
-macro_del_right_word: macro_del_right_word {
-    label = "macro_del_right_word";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp RALT>, <&macro_tap &kp RIGHT &kp BACKSPACE>, <&macro_release &kp RALT>;
-};
-
 // F5
 macro_tmux: macro_tmux {
     label = "macro_tmux";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&macro_press &kp LCTRL>, <&macro_tap &kp BSLH>, <&macro_release &kp LCTRL>;
-};
-
-// kp-w
-macro_del_word: macro_del_word {
-    label = "macro_del_word";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <&macro_press &kp RALT>, <&macro_tap &kp BACKSPACE>, <&macro_release &kp RALT>;
 };
 
 macro_quotes: macro_quotes{
