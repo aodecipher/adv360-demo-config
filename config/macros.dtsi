@@ -1,28 +1,28 @@
-// kp-c
-macro_left_wsp: macro_left_wsp {
-    label = "macro_left_wsp";
+// kp-c: move to the left workspace
+macro_lwsp: macro_lwsp {
+    label = "macro_lwsp";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&macro_press &kp RSHIFT &kp RWIN>, <&macro_tap &kp LEFT>, <&macro_release &kp RSHIFT &kp RWIN>;
 };
 
-// kp-v
-macro_right_wsp: macro_right_wsp {
-    label = "macro_right_wsp";
+// kp-v: move to the right workspace
+macro_rwsp: macro_rwsp {
+    label = "macro_rwsp";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&macro_press &kp RSHIFT &kp RWIN>, <&macro_tap &kp RIGHT>, <&macro_release &kp RSHIFT &kp RWIN>;
 };
 
-// kp-d
-macro_del_right_word: macro_del_right_word {
-    label = "macro_del_right_word";
+// kp-d: delete the word to the right
+macro_drw: macro_drw {
+    label = "macro_drw";
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
     bindings = <&macro_press &kp RALT>, <&macro_tap &kp RIGHT &kp BACKSPACE>, <&macro_release &kp RALT>;
 };
 
-// F5
+// F5: tmux leading key
 macro_tmux: macro_tmux {
     label = "macro_tmux";
     compatible = "zmk,behavior-macro";
