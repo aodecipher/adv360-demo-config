@@ -2,7 +2,7 @@
 
 &mmv {
   acceleration-exponent = <2>;
-  time-to-max-speed-ms = <100>;
+  time-to-max-speed-ms = <30>;
   delay-ms = <0>;
 };
 
@@ -14,8 +14,8 @@
 
 #define U_MOUSE_MOVE_MAX 600
 #define U_MOUSE_SCROLL_MAX 40
-#define SCREEN_WIDTH 2800
-#define SCREEN_HEIGHT 2048
+#define SCREEN_WIDTH 6000
+#define SCREEN_HEIGHT 4000
 
 #undef MOVE_UP
 #undef MOVE_DOWN
