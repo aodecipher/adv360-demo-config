@@ -1,11 +1,3 @@
-// move diagonal
-macro_diag: macro_diag {
-    label = "macro_diag";
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    bindings = <U_MS_G>, <U_MS_L>;
-};
-
 // kp-c: move to the left workspace
 macro_lwsp: macro_lwsp {
     label = "macro_lwsp";
