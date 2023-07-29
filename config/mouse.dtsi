@@ -14,8 +14,8 @@
 
 #define U_MOUSE_MOVE_MAX 600
 #define U_MOUSE_SCROLL_MAX 40
-#define screen_width 2800
-#define screen_height 2048
+#define SCREEN_WIDTH 2800
+#define SCREEN_HEIGHT 2048
 
 #undef MOVE_UP
 #undef MOVE_DOWN
@@ -25,7 +25,7 @@
 #define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
 #define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
 #define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
-#define MOVE_DIAG MOVE(screen_width, screen_height)
+#define MOVE_DIAG MOVE(SCREEN_WIDTH, SCREEN_HEIGHT)
 
 #undef SCROLL_UP
 #undef SCROLL_DOWN
